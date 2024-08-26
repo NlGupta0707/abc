@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/custom.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <!-- contact content -->
+        <div class="header-content-top">
+          <div class="content">
+            <span><i class="fas fa-phone-square-alt"></i> (00)0000-0000</span>
+            <span><i class="fas fa-envelope-square"></i>email@email.com.br</span>
+          </div>
+        </div>
+        <!-- / contact content -->
+        <div class="header-container">
+          <!-- logo -->
+          <span class="logo"><img src="assets/images/logo.png" alt="logo" /></span>
+          <!-- open nav mobile -->
+      
+          <!--search -->
+          <label class="open-search" for="open-search">
+            <i class="fas fa-search"></i>
+                  <input class="input-open-search" id="open-search" type="checkbox" name="menu" />
+          <div class="search">
+            <button class="button-search"><i class="fas fa-search"></i></button>
+            <input type="text" placeholder="What are you looking for?" class="input-search"/>
+          </div>
+          </label>
+          <!-- // search -->
+          <nav class="nav-content">
+            <!-- nav -->
+            <ul class="nav-content-list">
+              <li class="nav-content-item account-login">
+                <label class="open-menu-login-account" for="open-menu-login-account">
+      
+                  <input class="input-menu" id="open-menu-login-account" type="checkbox" name="menu" />
+      
+                  <i class="fas fa-user-circle"></i><span class="login-text">Hello, Sign in <strong>Create Account</strong></span> <span class="item-arrow"></span>
+      
+                  <!-- submenu -->
+                  <ul class="login-list">
+                    <li class="login-list-item"><a href="#" id="openPopup">My account</a></li>
+                    <li class="login-list-item"><a href="#">Create account</a></li>
+                    <li class="login-list-item"><a href="#">logout</a></li>
+                    </label>
+                  </ul>
+              </li>
+              <li class="nav-content-item"><a class="nav-content-link" href="#"><i class="fas fa-heart"></i></a></li>
+              <li class="nav-content-item"><a class="nav-content-link" href="#"><i class="fas fa-shopping-cart"></i></a></li>
+              <!-- call to action -->
+            </ul>
+          </nav>
+        </div>
+        <!-- nav navigation commerce -->
+        <div class="nav-container">
+          <nav class="all-category-nav">
+            <label class="open-menu-all" for="open-menu-all">
+              <input class="input-menu-all" id="open-menu-all" type="checkbox" name="menu-open" />
+              <span class="all-navigator"><i class="fas fa-bars"></i> <span>All category</span> <i class="fas fa-angle-down"></i>
+                <i class="fas fa-angle-up"></i>
+              </span>
+      
+              <ul class="all-category-list">
+                <li class="all-category-list-item"><a href="#" class="all-category-list-link">Smartphones<i class="fas fa-angle-right"></i></a>
+                  <div class="category-second-list">
+                    <ul class="category-second-list-ul">
+                      <li class="category-second-item"><a href="#">Iphone 10</a></li>
+                      <li class="category-second-item"><a href="#">Galaxy Note 10</a></li>
+                      <li class="category-second-item"><a href="#">Motorola One </a></li>
+                      <li class="category-second-item"><a href="#">Galaxy A80 </a></li>
+                      <li class="category-second-item"><a href="#">Galaxy M </a></li>
+                      <li class="category-second-item"><a href="#">Huaway P30 </a></li>
+                    </ul>
+      
+                    <div class="img-product-menu"><img src="https://i.ibb.co/Vvndkmy/banner.jpg"></div>
+                    </div>
+                </li>
+                <li class="all-category-list-item"><a href="#" class="all-category-list-link">Furniture <i class="fas fa-angle-right"></i></a></li>
+                <li class="all-category-list-item"><a href="#" class="all-category-list-link">Toys<i class="fas fa-angle-right"></i></a></li>
+                <li class="all-category-list-item"><a href="#" class="all-category-list-link">Computing<i class="fas fa-angle-right"></i></a></li>
+                <li class="all-category-list-item"><a href="#" class="all-category-list-link">Games<i class="fas fa-angle-right"></i></a></li>
+                <li class="all-category-list-item"><a href="" class="all-category-list-link">Automotive<i class="fas fa-angle-right"></i></a></li>
+      
+              </ul>
+            </label>
+      
+          </nav>
+          <nav class="featured-category">
+            <ul class="nav-row">
+              <li class="nav-row-list"><a href="#" class="nav-row-list-link">Smartphones</a></li>
+              <li class="nav-row-list"><a href="#" class="nav-row-list-link">furniture</a></li>
+              <li class="nav-row-list"><a href="#" class="nav-row-list-link">Toys</a></li>
+              <li class="nav-row-list"><a href="#" class="nav-row-list-link">Computing</a></li>
+              <li class="nav-row-list"><a href="#" class="nav-row-list-link">Games</a></li>
+              <li class="nav-row-list"><a href="#" class="nav-row-list-link">Automotive</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <div id="loginPopup" class='login-window'>
+        <div class="login_panel">
+          <div class="login_card">
+              <span id="closePopup" class="close_popup">&times;</span>
+              <div class="login_title">Sign-in</div>
+              <div>
+                  <div class="field">
+                    <i class="fas fa-user"></i>
+                      <input type="text" placeholder="Username" value="" />
+                  </div> 
+              </div>
+              <div>
+                   <div class="field">
+                    <i class="fas fa-lock"></i>
+                      <input type="password" placeholder="Password" value="" />
+                  </div>
+              </div>
+              <div>
+                    <button class='login_btn'>Login</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+      <div class="slider-container">
+        <div class="wrapper">
+            <div id="background-section" class="background-section">
+                <div class="bg active">
+                    <img src="assets/images/bg4.jpg">
+                </div>
+                <div class="bg">
+                    <img src="assets/images/bg2.jpg" alt="">
+                </div>
+                <div class="bg">
+                    <img src="assets/images/bg3.jpg" alt="">
+                </div>
+                <div class="bg">
+                    <img src="assets/images/bg1.jpg" alt="">
+                </div>			
+            </div>
+            <div class="copy-section">
+                <div id="copy-container">
+                    <div class="copy active">
+                        <div class="copy-content">
+                            <h1>Roses</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus condimentum pulvinar.</p>
+                            <div class="btn">Read More</div>
+                        </div>
+                    </div>
+                    <div class="copy">
+                        <div class="copy-content">
+                            <h1>Lilies</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus condimentum pulvinar.</p>
+                            <div class="btn">Read More</div>
+                        </div>
+                    </div>
+                    <div class="copy">
+                        <div class="copy-content">
+                            <h1>Germini</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus condimentum pulvinar.</p>
+                            <div class="btn">Read More</div>
+                        </div>
+                    </div>
+                    <div class="copy">
+                        <div class="copy-content">
+                            <h1>Carnations</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus condimentum pulvinar.</p>
+                            <div class="btn">Read More</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copy-timeline"></div>
+            </div>
+            <div class="carousel">
+                <div class="carousel-track" id="carousel-track">
+                    <div class="slide active">
+                        <img src="assets/images/bg4.jpg">
+                        <div class="slide-text">
+                            <strong>Roses</strong>
+                            <span>Lipsum dolor ipsum</span>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="assets/images/bg2.jpg">
+                        <div class="slide-text">
+                            <strong>Lilies</strong>
+                            <span>Lipsum dolor ipsum</span>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="assets/images/bg3.jpg">
+                        <div class="slide-text">
+                            <strong>Germini</strong>
+                            <span>Lipsum dolor ipsum</span>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="assets/images/bg1.jpg">
+                        <div class="slide-text">
+                            <strong>Carnations</strong>
+                            <span>Lipsum dolor ipsum</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-controls">
+                    <button class="carousel-left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+                        </svg>
+                    </button>
+                    <button class="carousel-right">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="marquee">
+            <div class="marquee-inner">
+                <img src="assets/images/1.jpg" alt="Image 1">
+                <img src="assets/images/2.jpg" alt="Image 3">
+                <img src="assets/images/3.jpg" alt="Image 2">
+                <img src="assets/images/4.jpg" alt="Image 4">
+                <img src="assets/images/5.jpg" alt="Image 5">
+                <img src="assets/images/6.jpg" alt="Image 6">
+                <img src="assets/images/7.jpg" alt="Image 7">
+                <img src="assets/images/8.jpg" alt="Image 8">
+            </div>
+        </div>
+    </div>
+
+    <section id="banner3" class="section-p1">
+        <div class="banner-box" style="background-image: url(assets/images/bg5.jpg);">
+          
+          <h2>SEASONAL SALES</h2>
+          <h3>Winter Collection -50% OFF</h3>
+       
+        </div>
+        
+        <div class="banner-box" style="background-image: url(assets/images/bg2.jpg);">
+          
+          <h2>SEASONAL SALES</h2>
+          <h3>Winter Collection -50% OFF</h3>
+       
+        </div>
+        
+        <div class="banner-box" style="background-image: url(assets/images/bg6.jpg);">
+          
+          <h2>SEASONAL SALES</h2>
+          <h3>Winter Collection -50% OFF</h3>
+       
+        </div>
+        
+      </section>
+   
+      <section id="sm-banner" class="section-p1 container"> 
+        <div class="banner-box" style="background-image: url(assets/images/b17.png);">
+          <h4>crazy deals</h4>
+          <h2>buy 1 get 1 free</h2>
+          <span>The best classic dress is on sales at cara</span>
+          <button class="white">Learn More</button> 
+        
+        </div>
+        
+        <div class="banner-box" style="background-image: url(assets/images/b10.png);">
+          <h4>spring/summer</h4>
+          <h2>upcoming season</h2>
+          <span>The best classic dress is on sales at cara</span>
+          <button class="white">Collection</button> 
+        
+        </div>
+        
+      </section>
+
+      
+      
+      <section id="product1" class="section-p1 container">
+        <h2>Featured Products</h2>
+        <p>Summer Collection New Modern Design</p>
+        <div class="pro-container">
+          <div class="pro card-slider">
+            <div class="swiper cardSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="assets/images/1.jpg" alt="Product Image 1" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/images/2.jpg" alt="Product Image 1" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/images/3.jpg" alt="Product Image 1" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/images/4.jpg" alt="Product Image 1" />
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="des">
+                <div class="fixed_flex">
+                    <h5>Carton Astronault Saree</h5>
+                    <a href=""><i class="fas fa-heart" aria-hidden="true"></i></a>
+                </div>
+              <span>adidas</span>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+              </div>
+              <div class="fixed_flex">
+                <h4><del>$100</del>$78</h4>
+                <a href=""><i class="fas fa-shopping-cart cart"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="pro card-slider">
+            <div class="swiper cardSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="assets/images/2.jpg" alt="Product Image 1" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/images/1.jpg" alt="Product Image 1" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/images/3.jpg" alt="Product Image 1" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/images/4.jpg" alt="Product Image 1" />
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="des">
+                <div class="fixed_flex">
+                    <h5>Carton Astronault Saree</h5>
+                    <a href=""><i class="fas fa-heart" aria-hidden="true"></i></a>
+                </div>
+              <span>adidas</span>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+              </div>
+              <div class="fixed_flex">
+                <h4><del>$100</del>$78</h4>
+                <a href=""><i class="fas fa-shopping-cart cart"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="pro card-slider">
+            <div class="swiper cardSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="assets/images/3.jpg" alt="Product Image 1" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/images/2.jpg" alt="Product Image 1" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/images/3.jpg" alt="Product Image 1" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/images/4.jpg" alt="Product Image 1" />
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="des">
+                <div class="fixed_flex">
+                    <h5>Carton Astronault Saree</h5>
+                    <a href=""><i class="fas fa-heart" aria-hidden="true"></i></a>
+                </div>
+              <span>adidas</span>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+              </div>
+              <div class="fixed_flex">
+                <h4><del>$100</del>$78</h4>
+                <a href=""><i class="fas fa-shopping-cart cart"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="pro card-slider">
+            <div class="swiper cardSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="assets/images/4.jpg" alt="Product Image 1" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/images/2.jpg" alt="Product Image 1" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/images/3.jpg" alt="Product Image 1" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/images/4.jpg" alt="Product Image 1" />
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="des">
+                <div class="fixed_flex">
+                    <h5>Carton Astronault Saree</h5>
+                    <a href=""><i class="fas fa-heart" aria-hidden="true"></i></a>
+                </div>
+              <span>adidas</span>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+              </div>
+              <div class="fixed_flex">
+                <h4><del>$100</del>$78</h4>
+                <a href=""><i class="fas fa-shopping-cart cart"></i></a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+      
+
+      <section id="feature" class="section-p1">
+        <div class="fe-box">
+          <img src="assets/images/f1.png" alt="">
+          <h6>Free Shipping</h6>
+        </div>
+        
+        <div class="fe-box">
+          <img src="assets/images/f2.png" alt="">
+          <h6>Online Order</h6>
+        </div>
+        
+        <div class="fe-box">
+          <img src="assets/images/f3.png" alt="">
+          <h6>Save Money</h6>
+        </div>
+        
+        <div class="fe-box">
+          <img src="assets/images/f4.png" alt="">
+          <h6>Promotions</h6>
+        </div>
+        
+        <div class="fe-box">
+          <img src="assets/images/f5.png" alt="">
+          <h6>Happy Sell</h6>
+        </div>
+        
+        <div class="fe-box">
+          <img src="assets/images/f6.png" alt="">
+          <h6>F24/7 Support</h6>
+        </div>
+      </section>
+
+    
+
+
+
+    <footer class="padding_4x">
+        <div class="flex">
+          <section class="flex-content padding_1x">
+            <h3>Top Products</h3>
+            <a href="#">Managed Website</a>
+            <a href="#">Manage Reputation</a>
+            <a href="#">Power Tools</a>
+            <a href="#">Marketing Service</a>
+          </section>
+          <section class="flex-content padding_1x">
+            <h3>Quick Links</h3>
+            <a href="#">Jobs</a>
+            <a href="#">Brand Assets</a>
+            <a href="#">Investor Relations</a>
+            <a href="#">Terms of Service</a>
+          </section>
+          <section class="flex-content padding_1x">
+            <h3>Features</h3>
+            <a href="#">Jobs</a>
+            <a href="#">Brand Assets</a>
+            <a href="#">Investor Relations</a>
+            <a href="#">Terms of Service</a>
+          </section>
+          <section class="flex-content padding_1x">
+            <h3>Resources</h3>
+            <a href="#">Guides</a>
+            <a href="#">Research</a>
+            <a href="#">Experts</a>
+            <a href="#">Agencies</a>
+          </section>
+          <section class="flex-content padding_1x">
+            <h3>Newsletter</h3>
+            <p>You can trust us. we only send promo offers,</p>
+            <fieldset class="fixed_flex">
+              <input type="email" name="newsletter" placeholder="Your Email Address">
+              <button class="btn">Subscribe</button>
+            </fieldset>
+          </section>
+        </div>
+        <div class="flex">
+          <section class="flex-content padding_1x">
+            <p>Copyright ©202 All rights reserved || Zhurionline</p>
+          </section>
+          <section class="flex-content padding_1x">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-dribbble"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </section>
+        </div>
+      </footer>
+
+
+
+    
+      <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 5,
+          spaceBetween: 50,
+        },
+      },
+    });
+  </script>
+  <script>
+     var swiper = new Swiper(".cardSwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (index + 1) + "</span>";
+        },
+      },
+    });
+  </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const marquee = document.querySelector(".marquee-inner");
+            const speed = 0.5;
+            let scrollAmount = 0;
+            let isHovered = false;
+            const marqueeContent = marquee.innerHTML;
+            marquee.innerHTML += marqueeContent;
+            const startScrolling = () => {
+                if (!isHovered) {
+                    scrollAmount -= speed;
+                    if (Math.abs(scrollAmount) >= marquee.scrollWidth / 2) {
+                        scrollAmount = 0;
+                    }
+                    marquee.style.transform = `translateX(${scrollAmount}px)`;
+                }
+                requestAnimationFrame(startScrolling);
+            };
+            marquee.addEventListener("mouseover", () => {
+                isHovered = true;
+            });
+            marquee.addEventListener("mouseout", () => {
+                isHovered = false;
+            });
+            startScrolling();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" referrerpolicy="no-referrer" />
+</head>
+<style>
+
+.login-window{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+.login_panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 75px);
+}
+.login_card {
+  width: 320px;
+  padding: 35px 20px;
+  box-sizing: border-box;
+  background-color: #d1d1d1b3;
+}
+.login_title {
+  font-size: 24px;
+  text-align: center;
+  color: #ffffff;
+  margin: 0px 0 40px;
+}
+.field {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 4px;
+  margin: 30px 0;
+}
+.field i {
+  background-color: #FC7301;
+  width: 18px;
+  padding: 12px 8px;
+  border-radius: 4px 0 0 4px;
+}
+.login_card .field input {
+  border: none;
+  width: 100%;
+  padding: 5px;
+}
+.login_card .field input:focus-visible {
+  outline: none;;
+}
+.login_btn {
+  background-color: #FC7301;
+  border: none;
+  width: 100%;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+</style>
+<body>
+    <div class='login-window'>
+        <div class="login_panel">
+          <div class="login_card">
+              <div class="login_title">Sign-in</div>
+              <div>
+                  <div class="field">
+                    <i class="fas fa-user"></i>
+                      <input type="text" placeholder="Username" value="" />
+                  </div> 
+              </div>
+              <div>
+                   <div class="field">
+                    <i class="fas fa-lock"></i>
+                      <input type="password" placeholder="Password" value="" />
+                  </div>
+              </div>
+              <div>
+                    <button class='login_btn'>Login</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</body>
+</html>
